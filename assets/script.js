@@ -1,6 +1,7 @@
 
 
 function sendApiRequest(){
+    document.getElementById("main").innerHTML="";
     var userInput = document.getElementById("input").value
     console.log(userInput)
     
@@ -23,7 +24,7 @@ function sendApiRequest(){
             img.src = giphyOBJ.data[i].images.fixed_height.url
             let main = document.querySelector("#main")
             main.appendChild(img)
-            userInput = "";
+            userInput = " ";
 
             console.log(img.src)                  
             }
